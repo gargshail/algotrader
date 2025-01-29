@@ -30,6 +30,20 @@ To use the trading scripts, you will need an API key from Alpaca Markets. Follow
 
 Once you have your API key and secret key, you can set them as environment variables or directly in your configuration file.
 
+## Setting Up Your Environment
+
+To securely store your API keys, you can use a `.env` file. Follow these steps to set up your `.env` file:
+
+1. Create a file named `.env` in the root directory of the project.
+2. Open the `.env` file in a text editor and add the following lines, replacing `your_api_key` and `your_secret_key` with your actual API key and secret key:
+    ```plaintext
+    ALPACA_API_KEY=your_api_key
+    ALPACA_SECRET_KEY=your_secret_key
+    ```
+3. Save and close the `.env` file.
+
+Your API keys will now be loaded from the `.env` file when you run the trading scripts.
+
 ## Installation
 
 1. Clone the repository:
@@ -45,12 +59,14 @@ Once you have your API key and secret key, you can set them as environment varia
     pip install -r requirements.txt
     ```
 
-## Usage
+## Notebooks
+Explore python notebooks in `notebooks` folder
 
-To run the algorithmic trading scripts, use the following command:
-```bash
-python main.py
-```
+## Streamlit Applications
+
+`streamlit_apps` contain various streamlit applications.
+
+you can run it using `streamlit run streamlit_apps/[application file].py
 
 ## Contributing
 
